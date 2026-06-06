@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One Small Seed — Find Your SOW POW Stage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="ambient-shape ambient-shape--1"></span>
+    <span class="ambient-shape ambient-shape--2"></span>
+    <span class="ambient-shape ambient-shape--3"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="logo-brand" aria-label="One Small Seed">
+      <svg class="logo-icon" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M16 38C16 38 8 28 8 18C8 12 11.5 8 16 8C20.5 8 24 12 24 18C24 28 16 38 16 38Z" fill="#1F4D3A" opacity="0.15"/>
+        <path d="M16 6C16 6 10 14 10 20C10 24 12.5 27 16 27C19.5 27 22 24 22 20C22 14 16 6 16 6Z" fill="#1F4D3A"/>
+        <ellipse cx="11" cy="14" rx="4" ry="7" transform="rotate(-25 11 14)" fill="#1F4D3A" opacity="0.85"/>
+        <ellipse cx="21" cy="14" rx="4" ry="7" transform="rotate(25 21 14)" fill="#1F4D3A" opacity="0.85"/>
+        <ellipse cx="16" cy="10" rx="3.5" ry="6" fill="#1F4D3A"/>
+      </svg>
+      <span class="logo-wordmark">
+        <span class="logo-line">One</span>
+        <span class="logo-line">Small Seed</span>
+      </span>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#" class="nav-link" onclick="return false;">Financial</a>
+      <a href="#" class="nav-link" onclick="return false;">Building</a>
+      <a href="#" class="nav-link" onclick="return false;">Connectors</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <button type="button" class="btn-nav-cta" onclick="startQuiz()">Start The Journey</button>
+
+    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="container">
+
+    <section id="s-intro" class="stage-view stage-view--intro">
+      <div class="card card--hero anim">
+        <div class="hero-decor hero-decor--leaves" aria-hidden="true"></div>
+        <div class="hero-decor hero-decor--glow" aria-hidden="true"></div>
+
+        <h1 class="intro-title">Find Your SOW POW Stage</h1>
+        <p class="intro-subtitle">
+          Discover your business growth stage in 60 seconds
+        </p>
+        <button type="button" class="btn-green" onclick="startQuiz()">
+          Start The Journey
+        </button>
+
+        <svg class="hero-seed-icon" viewBox="0 0 24 30" fill="none" aria-hidden="true">
+          <path d="M12 28C12 28 6 20 6 13C6 9 8.5 6 12 6C15.5 6 18 9 18 13C18 20 12 28 12 28Z" fill="#1F4D3A" opacity="0.2"/>
+          <path d="M12 4C12 4 8 10 8 14C8 17 9.5 19 12 19C14.5 19 16 17 16 14C16 10 12 4 12 4Z" fill="#1F4D3A" opacity="0.5"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="s-question" class="stage-view stage-view--quiz" style="display:none">
+      <div class="quiz-shell">
+        <header class="quiz-header">
+          <div class="logo-brand logo-brand--compact">
+            <svg class="logo-icon logo-icon--light" viewBox="0 0 32 40" fill="none" aria-hidden="true">
+              <path d="M16 6C16 6 10 14 10 20C10 24 12.5 27 16 27C19.5 27 22 24 22 20C22 14 16 6 16 6Z" fill="#F7F3EB"/>
+              <ellipse cx="11" cy="14" rx="4" ry="7" transform="rotate(-25 11 14)" fill="#F7F3EB" opacity="0.9"/>
+              <ellipse cx="21" cy="14" rx="4" ry="7" transform="rotate(25 21 14)" fill="#F7F3EB" opacity="0.9"/>
+              <ellipse cx="16" cy="10" rx="3.5" ry="6" fill="#F7F3EB"/>
+            </svg>
+            <span class="logo-wordmark logo-wordmark--light">
+              <span class="logo-line">One</span>
+              <span class="logo-line">Small Seed</span>
+            </span>
+          </div>
+          <button type="button" class="quiz-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+
+        <div class="card card--quiz" id="q-card">
+          <div class="progress-section">
+            <span class="progress-label">Your progress</span>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="q-number" id="q-number">Question 1 of 5</p>
+          </div>
+
+          <p class="q-text" id="q-text"></p>
+          <div class="opts" id="opts"></div>
+          <button type="button" class="btn-next" id="btn-next" onclick="nextQ()" style="display:none">
+            Next →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="s-results" class="stage-view stage-view--results" style="display:none">
+      <div class="card card--results anim" id="res-card">
+        <!-- Results content inserted by JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="supabase.js"></script>
+  <script type="module">
+    import { prepareEmailPayload } from "./emailDelivery.js";
+    window.prepareEmailPayload = prepareEmailPayload;
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>

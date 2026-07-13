@@ -2,7 +2,18 @@
   "name": "sowpow-quiz",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test",
+    "check": "node --check quizData.js && node --check stageIcons.js && node --check emailDelivery.js && node --check lib/buildEmailHtml.js && node --check app/api/quiz-submit/route.js"
+  },
   "dependencies": {
+    "@supabase/supabase-js": "^2.110.2",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "resend": "^4.8.0"
   }
 }

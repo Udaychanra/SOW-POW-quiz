@@ -18,11 +18,7 @@ function respondDevDomainFallback(response, resendError) {
     "Resend domain verification block (dev fallback):",
     JSON.stringify(resendError, null, 2)
   );
-  return response.status(200).json({
-    success: false,
-    devMode: true,
-    message: "Domain not verified in Resend yet",
-  });
+  return response.status(502).json({ error: "Email sender domain is not verified" });
 }
 
 /**

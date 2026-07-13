@@ -99,10 +99,12 @@
             <div class="progress-bar">
               <div class="progress-fill" id="progress-fill"></div>
             </div>
-            <p class="q-number" id="q-number">Question 1 of 5</p>
+            <p class="q-number" id="q-number">Question 1 of 10</p>
           </div>
 
+          <p class="q-tag" id="q-tag"></p>
           <p class="q-text" id="q-text"></p>
+          <p class="q-subtext" id="q-subtext"></p>
           <div class="opts" id="opts"></div>
           <button type="button" class="btn-next" id="btn-next" onclick="nextQ()" style="display:none">
             Next →
@@ -120,10 +122,6 @@
   </main>
 
   <script src="supabase.js"></script>
-  <script type="module">
-    import { prepareEmailPayload } from "./emailDelivery.js";
-    window.prepareEmailPayload = prepareEmailPayload;
-  </script>
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

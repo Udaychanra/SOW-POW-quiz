@@ -1,0 +1,47 @@
+.motionBase {
+  --motion-fast: var(--site-motion-fast, 280ms);
+  --motion-standard: var(--site-motion-standard, 480ms);
+  --motion-section: var(--site-motion-section, 720ms);
+  --motion-slow: var(--site-motion-slow, 980ms);
+  --motion-ease: var(--site-motion-ease, cubic-bezier(.22,1,.36,1));
+  --motion-distance: var(--site-motion-distance, 24px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motionBase[data-motion-ready="true"][data-visible="false"] { opacity: 0; }
+  .motionBase[data-motion-ready="true"][data-visible="false"].fadeUp { transform: translate3d(0,var(--motion-distance),0); }
+  .motionBase[data-motion-ready="true"][data-visible="false"].scaleReveal { transform: scale(.97); }
+  .motionBase[data-motion-ready="true"][data-visible="false"].fromLeft { transform: translate3d(calc(var(--motion-distance) * -1),0,0); }
+  .motionBase[data-motion-ready="true"][data-visible="false"].fromRight { transform: translate3d(var(--motion-distance),0,0); }
+  .motionBase[data-visible="true"] { opacity: 1; transform: none; transition: opacity var(--motion-section) var(--motion-ease), transform var(--motion-section) var(--motion-ease); }
+
+  .stagger[data-motion-ready="true"] > * { transition: opacity var(--motion-standard) var(--motion-ease), transform var(--motion-standard) var(--motion-ease); }
+  .stagger[data-motion-ready="true"][data-visible="false"] > * { opacity: 0; transform: translate3d(0,18px,0); }
+  .stagger[data-visible="true"] > * { opacity: 1; transform: none; }
+  .stagger[data-visible="true"] > :nth-child(1) { transition-delay: 40ms; }
+  .stagger[data-visible="true"] > :nth-child(2) { transition-delay: 110ms; }
+  .stagger[data-visible="true"] > :nth-child(3) { transition-delay: 180ms; }
+  .stagger[data-visible="true"] > :nth-child(4) { transition-delay: 250ms; }
+  .stagger[data-visible="true"] > :nth-child(5) { transition-delay: 320ms; }
+  .stagger[data-visible="true"] > :nth-child(6) { transition-delay: 390ms; }
+  .stagger[data-visible="true"] > :nth-child(7) { transition-delay: 460ms; }
+  .stagger[data-visible="true"] > :nth-child(8) { transition-delay: 530ms; }
+  .stagger[data-visible="true"] > :nth-child(9) { transition-delay: 600ms; }
+  .stagger[data-visible="true"] > :nth-child(10) { transition-delay: 670ms; }
+
+  .pageTransition { animation: pageEnter 520ms var(--motion-ease, cubic-bezier(.22,1,.36,1)) both; }
+}
+
+@keyframes pageEnter { from { opacity: 0; transform: translate3d(0,10px,0); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 600px) and (prefers-reduced-motion: no-preference) {
+  .motionBase { --motion-distance: 13px; }
+  .motionBase[data-visible="true"] { transition-duration: 460ms; }
+  .stagger[data-visible="true"] > * { transition-delay: calc(35ms * var(--mobile-stagger, 1)); }
+  .stagger[data-visible="true"] > :nth-child(n+5) { transition-delay: 150ms; }
+  .pageTransition { animation-duration: 360ms; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motionBase, .motionBase > *, .pageTransition { opacity: 1 !important; transform: none !important; transition: none !important; animation: none !important; }
+}

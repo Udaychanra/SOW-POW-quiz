@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="seed" viewBox="0 0 64 64"><path d="M10 47c13-7 31-7 44 0M14 53c11-5 25-5 36 0"/><path d="M32 47V27m0 9c-9 0-15-6-16-14 9 0 15 5 16 14Zm0-5c9 0 15-6 16-14-9 0-15 5-16 14Z"/><path d="M31 20c-3-5-2-9 1-13 4 4 4 9-1 13Z" stroke="#c8a96b"/></symbol>
+  <symbol id="lock" viewBox="0 0 64 64"><rect x="16" y="24" width="32" height="25" rx="6"/><path d="M22 24v-7a10 10 0 0 1 20 0v7M32 33v7"/><path d="M32 49v8m0-4-8 5m8-5 8 5" stroke="#c8a96b"/></symbol>
+  <symbol id="home" viewBox="0 0 64 64"><path d="m10 29 22-18 22 18M16 27v21h32V27M27 48V35h10v13"/><path d="M12 52h40M17 57h30" stroke="#c8a96b"/></symbol>
+  <symbol id="water" viewBox="0 0 64 64"><path d="M32 7C22 21 16 29 16 38a16 16 0 0 0 32 0c0-9-6-17-16-31Z"/><path d="M32 46v11m0-5-9 6m9-6 9 6" stroke="#c8a96b"/><path d="M23 39c1 5 4 8 9 9"/></symbol>
+  <symbol id="shield" viewBox="0 0 64 64"><path d="M32 7c8 7 16 8 23 10v13c0 14-8 22-23 28C17 52 9 44 9 30V17c7-2 15-3 23-10Z"/><path d="M32 19v27m0-12c-7 0-11-4-12-10 7 0 11 4 12 10Zm0-5c7 0 11-4 12-10-7 0-11 4-12 10Z" stroke="#c8a96b"/></symbol>
+  <symbol id="gate" viewBox="0 0 64 64"><path d="M8 56V17h17v39M39 56V17h17v39M25 23 13 28v22l12 6M39 23l12 5v22l-12 6"/><path d="M29 32h6M32 29v6" stroke="#c8a96b"/></symbol>
+  <symbol id="quill" viewBox="0 0 64 64"><path d="M13 48c8-19 19-32 39-42-1 21-11 35-34 39M17 44l26-28"/><path d="M11 54h39M18 49v5" stroke="#c8a96b"/></symbol>
+  <symbol id="sun" viewBox="0 0 64 64"><circle cx="32" cy="29" r="11"/><path d="M32 7v7M32 44v7M10 29h7M47 29h7M16 13l5 5M43 40l5 5M48 13l-5 5M21 40l-5 5"/><path d="M20 56h24" stroke="#c8a96b"/></symbol>
+  <symbol id="tree" viewBox="0 0 64 64"><path d="M32 57V30m0 15-12-11m12 4 13-13"/><path d="M17 36C6 27 11 12 24 15c5-11 20-8 21 3 13 0 16 16 6 23-10 7-29 6-34-5Z"/><path d="M21 57h22" stroke="#c8a96b"/></symbol>
+  <symbol id="branch" viewBox="0 0 64 64"><path d="M12 54c13-18 25-32 41-43M23 39c-8 0-13-4-14-11 8 0 13 3 14 11ZM35 29c0-8 4-13 11-14 0 8-3 13-11 14ZM36 31c8 0 13 4 14 11-8 0-13-3-14-11Z"/><circle cx="14" cy="51" r="3" stroke="#c8a96b"/></symbol>
+  <symbol id="compass" viewBox="0 0 64 64"><circle cx="32" cy="32" r="25"/><circle cx="32" cy="32" r="3" stroke="#c8a96b"/><path d="m43 18-7 18-18 10 8-18 17-10Z"/><path d="M32 7v5M32 52v5M7 32h5M52 32h5" stroke="#c8a96b"/><path d="m27 28 9 8" stroke="#c8a96b"/></symbol>
+  <symbol id="layers" viewBox="0 0 64 64"><path d="m32 8 24 13-24 13L8 21 32 8Z"/><path d="m11 33 21 12 21-12M11 45l21 12 21-12"/><path d="M22 21h20" stroke="#c8a96b"/></symbol>
+  <symbol id="book" viewBox="0 0 64 64"><path d="M8 13c11-4 19-1 24 6 6-7 14-10 24-6v39c-10-4-18-1-24 6-5-7-13-10-24-6V13Z"/><path d="M32 19v39"/><path d="M18 24h8M38 24h8" stroke="#c8a96b"/></symbol>
+  <symbol id="conversation" viewBox="0 0 64 64"><path d="M10 12h44v32H29L17 54V44h-7V12Z"/><path d="M20 25h24M20 33h16"/><path d="M46 18h2" stroke="#c8a96b"/></symbol>
+  <symbol id="mail" viewBox="0 0 64 64"><rect x="8" y="14" width="48" height="36" rx="5"/><path d="m11 18 21 17 21-17"/><path d="M44 44c-7 0-11-4-12-10 7 0 11 4 12 10Z" stroke="#c8a96b"/></symbol>
+  <symbol id="message" viewBox="0 0 64 64"><path d="M12 10h40v34H29L16 55V44h-4V10Z"/><path d="M22 22h20M22 31h14"/><path d="M45 37c-5 0-8-3-9-8 5 0 8 3 9 8Z" stroke="#c8a96b"/></symbol>
+</svg>

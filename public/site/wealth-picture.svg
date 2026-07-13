@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" role="img" aria-labelledby="title desc">
+  <title id="title">A mature tree above layered hills and a winding path</title>
+  <desc id="desc">A restrained green and cream wealth-building landscape in the One Small Seed palette.</desc>
+  <rect width="680" height="430" fill="#fbf7ee"/>
+  <ellipse cx="340" cy="145" rx="104" ry="69" fill="#e8e5d0" opacity=".66"/>
+  <path d="M0 268c103-68 213-66 342 6 129 71 232 60 338-10v166H0Z" fill="#d8ddc5"/>
+  <path d="M0 312c119-57 230-48 348 10 118 57 226 49 332-16v124H0Z" fill="#aab590"/>
+  <path d="M0 356c132-45 237-31 354 9 116 40 215 34 326-14v79H0Z" fill="#627a59"/>
+  <path d="M350 430c-4-43-21-77-55-105-14-11-20-25-16-39 5-18 25-29 43-23 19 6 28 26 22 43-5 14-16 24-31 31-33 17-53 48-63 93" fill="#fbf7ee"/>
+  <path d="M340 264v-92" stroke="#566c4c" stroke-width="12" stroke-linecap="round"/>
+  <path d="m341 205-55-52m55 32 48-55m-49 36-3-67" fill="none" stroke="#566c4c" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="338" cy="105" r="53" fill="#6f825c"/>
+  <circle cx="288" cy="137" r="47" fill="#8e9b6c"/>
+  <circle cx="390" cy="136" r="50" fill="#798a61"/>
+  <circle cx="303" cy="92" r="42" fill="#859469"/>
+  <circle cx="379" cy="88" r="44" fill="#61764f"/>
+  <circle cx="337" cy="149" r="51" fill="#74865c"/>
+</svg>

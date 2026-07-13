@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">One Small Seed video</title><desc id="desc">A cream, forest-green and muted-gold branded video thumbnail.</desc>
+  <rect width="1280" height="720" fill="#fbf7ee"/>
+  <path d="M0 470c240-105 422-77 632 19 215 98 414 77 648-34v265H0Z" fill="#dfe1cc"/>
+  <path d="M0 555c243-82 444-55 654 24 210 79 402 59 626-36v177H0Z" fill="#9dab84"/>
+  <path d="M0 635c233-54 434-37 652 21 214 57 411 44 628-25v89H0Z" fill="#5c7655"/>
+  <path d="M640 535V270m0 127c-103 0-170-66-182-160 103 0 170 58 182 160Zm0-59c103 0 170-66 182-160-103 0-170 58-182 160Z" fill="none" stroke="#1f4d3a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="640" cy="317" r="96" fill="#fffdf8" stroke="#c8a96b" stroke-width="7"/>
+  <path d="m612 266 87 51-87 51V266Z" fill="#1f4d3a"/>
+  <text x="640" y="115" text-anchor="middle" fill="#1f4d3a" font-family="Georgia,serif" font-size="54" font-weight="600">One Small Seed</text>
+  <text x="640" y="166" text-anchor="middle" fill="#98752f" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">WATCH &amp; LEARN</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">A mature tree above layered green hills</title>
+  <desc id="desc">A restrained illustration of a mature tree, a winding path, and layered hills in the One Small Seed palette.</desc>
+  <rect width="900" height="360" fill="#fbf7ee"/>
+  <path d="M0 230C160 170 270 190 430 245c160 54 300 42 470-22v137H0Z" fill="#dce0c9"/>
+  <path d="M0 268c180-62 313-37 459 9 145 46 278 31 441-29v112H0Z" fill="#a9b590"/>
+  <path d="M0 303c171-48 318-25 471 9 153 34 284 23 429-24v72H0Z" fill="#657e5c"/>
+  <path d="M456 360c10-68 4-103-33-139-11-11-17-24-17-38 0-17 13-31 31-31s32 14 32 31c0 14-7 27-18 38-35 34-41 70-31 139" fill="#f7f1e4"/>
+  <path d="M706 238v-91" stroke="#536b49" stroke-width="10" stroke-linecap="round"/>
+  <path d="M706 178c-39-8-65-31-70-65 36-4 65 16 70 51 8-44 38-69 78-67-1 38-29 68-78 81Z" fill="#71855b"/>
+  <circle cx="674" cy="120" r="27" fill="#8f9c69"/><circle cx="729" cy="105" r="34" fill="#62794f"/><circle cx="765" cy="137" r="28" fill="#829163"/><circle cx="698" cy="144" r="31" fill="#75865a"/>
+</svg>

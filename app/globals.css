@@ -1,0 +1,23 @@
+@import "../style.css";
+
+.container--intro { max-width: 720px; }
+.container--quiz-active { max-width: 560px; padding-top: 8px; }
+
+.question-navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.question-navigation .btn-next { flex: 1; }
+.btn-back { width: auto; margin: 0; padding: 14px 22px; }
+.confirmation-box { text-align: center; }
+.confirmation-box .success-text { color: var(--green-primary); font-size: 0.95rem; line-height: 1.7; }
+.logo-brand-link { color: inherit; text-decoration: none; }
+.about-stage-symbol .results-emoji { min-height: 0; width: 58px; height: 58px; margin: 0 0 14px; background: transparent; }
+.about-stage-symbol .stage-icon { width: 58px; height: 58px; }
+
+@media (max-width: 480px) {
+  .question-navigation { align-items: stretch; }
+  .btn-back { padding-inline: 18px; }
+}

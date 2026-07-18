@@ -7,10 +7,10 @@ function PlayIcon({ compact = false }) {
   return <svg className={compact ? styles.youtubePlaySmall : styles.youtubePlayIcon} viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m20 16 13 8-13 8V16Z"/></svg>;
 }
 
-export default function YouTubeVideoCard({ video }) {
+export default function YouTubeVideoCard({ video, analyticsEvent, analyticsPage, position }) {
   const publishedDate = formatYouTubeDate(video.publishedAt);
   return <PremiumCard as="article" variant="beveled" className={`${styles.resourceCard} ${styles.youtubeCard}`}>
-    <a className={styles.youtubeCardLink} href={video.videoUrl} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`}>
+    <a className={styles.youtubeCardLink} href={video.videoUrl} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`} data-analytics-event={analyticsEvent} data-analytics-page={analyticsPage} data-analytics-video-id={video.id} data-analytics-video-position={position} data-analytics-destination="external">
       <div className={styles.youtubeThumbnail}>
         <YouTubeThumbnail src={video.thumbnailUrl} title={video.title} className={styles.youtubeThumbnailImage} />
         <span className={styles.youtubeThumbnailOverlay} aria-hidden="true"></span>

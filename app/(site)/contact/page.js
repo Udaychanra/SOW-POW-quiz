@@ -7,18 +7,36 @@ import PremiumCard from "../../../components/site/PremiumCard.js";
 import SectionHeading from "../../../components/site/SectionHeading.js";
 import styles from "../../../components/site/site.module.css";
 
-export const metadata = { title: "Contact | One Small Seed" };
+export const metadata = {
+  title: "Contact | One Small Seed",
+  description: "Prepare general context for a future conversation with One Small Seed. Online delivery is not currently connected.",
+};
 
-const options = [
-  ["compass", "Take the quiz", "Best for first-time visitors.", "/sow-pow-quiz"],
-  ["conversation", "Book a conversation", "Best for people ready for a deeper planning discussion.", "/licensed-services"],
-  ["mail", "Join the newsletter", "Best for ongoing education.", "/resources"],
-  ["message", "General inquiry", "Best for partnerships, media or support.", "#contact-form"],
+const beforeYouBegin = [
+  "The conversation begins with context, not commitment",
+  "Educational content is not individualized advice",
+  "Licensed services are available only where properly licensed",
+  "Tax and legal questions should be discussed with qualified professionals",
 ];
 
 export default function ContactPage() {
   return <>
-    <PageHero eyebrow="Contact" title="Start with clarity." copy="Whether you are beginning the journey, looking for resources, or ready for a deeper conversation, One Small Seed begins with the right next step." />
-    <section className={styles.section}><div className={styles.content}><SectionHeading title="Choose the right next step" copy="A clear starting point keeps the conversation useful and focused." /><div className={styles.contactLayout}><MotionGroup className={styles.contactOptions} stagger>{options.map(([icon,title,copy,href], index) => <PremiumCard as={Link} variant={index % 2 ? "inset" : "soft"} className={styles.contactOption} href={href} key={title}><IconMedallion name={icon} label="" tone={index % 2 ? "gold" : "sage"} floating /><div><h3>{title}</h3><p>{copy}</p></div><span className={styles.contactArrow} aria-hidden="true">→</span></PremiumCard>)}</MotionGroup><MotionGroup id="contact-form" variant="fromRight"><ContactForm /></MotionGroup></div></div></section>
+    <PageHero eyebrow="Start a Conversation" title="What question is already on your mind?" copy="Share a little context about what you would like to understand. A request begins a conversation—it does not create a commitment." note="Educational information only. Licensed services are available only where properly licensed." />
+    <section className={styles.section}><div className={styles.content}>
+      <SectionHeading title="Prepare the context for a conversation" copy="Choose the reason that best matches the question already on your mind." />
+      <div className={styles.contactPreparationLayout}>
+        <MotionGroup id="contact-form" variant="fromLeft"><ContactForm /></MotionGroup>
+        <MotionGroup className={styles.contactBefore} variant="fromRight">
+          <PremiumCard variant="landscape" className={styles.contactBeforeCard}>
+            <IconMedallion name="conversation" label="" tone="gold" />
+            <p className={styles.eyebrow}>Before You Begin</p>
+            <h2>Clarity comes before commitment.</h2>
+            <ul>{beforeYouBegin.map((item) => <li key={item}>{item}</li>)}</ul>
+            <Link className={styles.secondaryButton} href="/disclosures">Read Full Disclosures <span aria-hidden="true">→</span></Link>
+          </PremiumCard>
+          <p className={styles.contactAlternative}>You can also begin with the <Link href="/sow-pow-quiz">educational assessment</Link> or <Link href="/resources">explore resources</Link>. Neither creates an advisory relationship.</p>
+        </MotionGroup>
+      </div>
+    </div></section>
   </>;
 }

@@ -4,7 +4,10 @@ import PageHero from "../../../components/site/PageHero.js";
 import PremiumCard from "../../../components/site/PremiumCard.js";
 import styles from "../../../components/site/site.module.css";
 
-export const metadata = { title: "Disclosures | One Small Seed" };
+export const metadata = {
+  title: "Disclosures | One Small Seed",
+  description: "Read the educational, licensed-services, insurance-product, tax, legal and future-advisory boundaries for One Small Seed.",
+};
 
 const disclosures = [
   ["book", "Educational Content", "Content on this website is for educational and informational purposes only."],

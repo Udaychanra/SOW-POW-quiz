@@ -1,9 +1,9 @@
 export const siteNav = [
   { href: "/", label: "Home" },
-  { href: "/sow-method", label: "SOW Method" },
+  { href: "/sow-method", label: "Explore" },
   { href: "/resources", label: "Resources" },
   { href: "/about", label: "About" },
-  { href: "/licensed-services", label: "Licensed Services" },
+  { href: "/licensed-services", label: "Services" },
 ];
 
 export const stages = [

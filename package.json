@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "node --test",
-    "check": "node --check quizData.js && node --check stageIcons.js && node --check emailDelivery.js && node --check lib/buildEmailHtml.js && node --check app/api/quiz-submit/route.js"
+    "check": "node --check quizData.js && node --check stageIcons.js && node --check emailDelivery.js && node --check lib/buildEmailHtml.js && node --check app/api/quiz-submit/route.js && node --check app/api/contact/route.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.2",

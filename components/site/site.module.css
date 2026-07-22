@@ -395,9 +395,14 @@
 .contactPrivacy { margin: 0; color: #756f66; font-size: .72rem; line-height: 1.6; }
 .contactPreparationForm button { min-height: 48px; border: 1px solid var(--site-green); border-radius: 9px; transition: transform var(--site-motion-fast) var(--site-motion-ease),background var(--site-motion-fast) ease,box-shadow var(--site-motion-fast) ease; }
 .contactPreparationForm button:hover { background: var(--site-green-deep); box-shadow: 0 11px 24px rgba(24,67,48,.15); transform: translateY(-1px); }
+.contactPreparationForm button:disabled { cursor: wait; opacity: .72; transform: none; box-shadow: none; }
 .contactError, .contactInfo { padding: 13px 15px; border-radius: 9px; font-size: .78rem; line-height: 1.55; }
 .contactError { border: 1px solid #c98e7d; color: #743d31; background: #fff1ec; }
 .contactInfo { border: 1px solid rgba(200,169,107,.62); color: #4f594d; background: #f6eedf; }
+.contactHoneypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.contactSuccess { min-height: 360px; align-content: center; text-align: center; }
+.contactSuccess h2 { margin: 0 0 16px; color: var(--site-green); font-family: "Cormorant Garamond",Georgia,serif; font-size: 2.45rem; line-height: 1.05; }
+.contactSuccess p:not(.eyebrow) { max-width: 620px; margin: 0 auto 14px; color: var(--site-muted); line-height: 1.7; }
 .contactBefore { display: grid; gap: 18px; }
 .contactBeforeCard { min-height: 100%; padding: 38px; }
 .contactBeforeCard .eyebrow { margin-top: 24px; }

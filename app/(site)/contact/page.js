@@ -9,7 +9,7 @@ import styles from "../../../components/site/site.module.css";
 
 export const metadata = {
   title: "Contact | One Small Seed",
-  description: "Prepare general context for a future conversation with One Small Seed. Online delivery is not currently connected.",
+  description: "Share general context and request a conversation with One Small Seed.",
 };
 
 const beforeYouBegin = [
